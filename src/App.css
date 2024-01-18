@@ -1,7 +1,7 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem 1rem;
   text-align: center;
 }
 
@@ -49,7 +49,8 @@
   box-shadow: 0 3px 6px 0 #555;
   padding: 20px 10px;
   border-radius: 10px;
-  width: 380px;
+  max-width: 380px;
+  width: 100%;
   background-color: white;
 }
 .weatherForm .appLabel {
