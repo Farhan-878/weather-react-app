@@ -5,6 +5,14 @@ function WeatherData({ weather }) {
   const convertUnixTimestampToTime = (timestamp) =>
     new Date(timestamp * 1000).toLocaleTimeString();
 
+  // const convertUnixTimestampToDate = (timestamp) =>
+  //   new Date(timestamp * 1000).toLocaleDateString();
+
+  const currentDate = new Date();
+
+  const options = { year: "numeric", month: "long", day: "numeric" };
+  const formattedDate = currentDate.toLocaleDateString("en-IN", options);
+
   return (
     <div>
       {/* <h4>
@@ -24,6 +32,9 @@ function WeatherData({ weather }) {
             <span>{weather.main.temp}°C</span> |{" "}
             {weather.weather[0].description}
           </span>
+        </div>
+        <div className="time">
+          <span>{formattedDate}</span>
         </div>
         <span className="location">
           {" "}
