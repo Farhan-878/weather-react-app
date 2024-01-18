@@ -28,16 +28,34 @@ body {
   place-items: center;
   width: 100%;
   min-height: 100vh;
-  background-color: #0093e9;
-  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  /* background-color: #0093e9; */
+  /* background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%); */
+  background-image: linear-gradient(
+    to right top,
+    #d16ba5,
+    #c777b9,
+    #ba83ca,
+    #aa8fd8,
+    #9a9ae1,
+    #8aa7ec,
+    #79b3f4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
-
 button {
+  cursor: pointer;
+}
+
+/* button {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
@@ -54,7 +72,7 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
+} */
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -64,15 +82,13 @@ button:focus-visible {
   a:hover {
     color: #747bff;
   }
-  button {
-    background-color: #f9f9f9;
-  }
 }
+
 input {
   padding: 10px;
   margin: 10px 0;
   border-radius: 5px;
-  border: 2px solid #ccc;
+  border: 2px solid #646cff;
   max-width: 300px;
   width: 100%;
   font-size: 16px;
@@ -83,5 +99,5 @@ input {
 input:hover,
 input:focus,
 input:active {
-  border: 2px solid #000;
+  border: 2px solid #646cff;
 }

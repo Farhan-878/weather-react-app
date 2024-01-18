@@ -30,20 +30,23 @@ function Weather() {
   };
 
   return (
-    <div className="weatherForm ">
-      <div className="container">
-        <span className="appLabel">React Weather App</span>
+    <>
+      <div className="weatherForm ">
+        <div className="container">
+          <span className="appLabel">React Weather App</span>
 
-        {!weatherData && (
-          <WeatherForm onSearch={handleSearch} loading={loading} />
-        )}
-        {error && <p style={{ color: "red" }}>{error}</p>}
-        {weatherData && !loading && <WeatherData weather={weatherData} />}
-        {weatherData && (
-          <button onClick={() => setWeatherData(false)}>Back</button>
-        )}
+          {!weatherData && (
+            <WeatherForm onSearch={handleSearch} loading={loading} />
+          )}
+          {error && <p style={{ color: "red" }}>{error}</p>}
+          {weatherData && !loading && <WeatherData weather={weatherData} />}
+          {weatherData && (
+            <button onClick={() => setWeatherData(false)}>Back</button>
+          )}
+        </div>
       </div>
-    </div>
+      <p className="copyright">Made with ❤️ by Farhan</p>
+    </>
   );
 }
 
