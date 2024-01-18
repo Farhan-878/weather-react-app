@@ -29,6 +29,7 @@ function WeatherData({ weather }) {
           {" "}
           {weather.name}, {weather.sys.country}
         </span>
+
         <span className="weatherInfoLabel">Weather info</span>
         <div className="weatherInfoContainer">
           <div className="infoContainer">

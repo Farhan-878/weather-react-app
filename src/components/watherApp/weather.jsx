@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import WeatherForm from "./weatherForm";
 import WeatherData from "./weatherData";
 import PropTypes from "prop-types";
